@@ -161,7 +161,7 @@ export default function IronoxLanding() {
           <div className="card-hover bg-card/50 rounded-3xl p-8 backdrop-blur-sm">
             <motion.div className="flex items-center gap-3 mb-8" variants={fadeInLeft}>
               <Phone className="w-6 h-6 text-accent" />
-              <h2 className="text-2xl font-semibold">Get In Touch</h2>
+              <h2 className="text-2xl font-semibold text-accent">Get In Touch</h2>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
