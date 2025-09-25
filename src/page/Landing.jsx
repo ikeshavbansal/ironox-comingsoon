@@ -95,19 +95,18 @@ export default function IronoxLanding() {
         {/* Brand Name & Logo */}
     
           <div className="flex items-center justify-center gap-6">
-            <motion.div
-              className="relative mt-0"
-              initial={{ rotate: 0, scale: 0 }}
-              animate={{ rotate: 360, scale: 1 }}
-              transition={{ duration: 2, ease: "easeOut" }}
-            >
-               <img 
-                    src={logo} 
-                    
-                    alt="IRONOX Logo" 
-                    className="w-32 sm:w-40 md:w-56 lg:w-64 h-auto object-contain m-0 p-0"
-                />
-            </motion.div>
+          <motion.div
+            className="relative mt-0"
+            initial={{ opacity: 0, scale: 0.3 }}   // start small & transparent
+            animate={{ opacity: 1, scale: 1 }}     // end full size & visible
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            <img 
+              src={logo} 
+              alt="IRONOX Logo" 
+              className="w-32 sm:w-40 md:w-56 lg:w-64 h-auto object-contain m-0 p-0"
+            />
+          </motion.div>
             {/* <div>
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-shimmer mb-2">IRONOX</h1>
             
