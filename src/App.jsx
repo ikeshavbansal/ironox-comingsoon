@@ -1,10 +1,15 @@
-import { motion } from 'framer-motion'
-import IronoxLanding from './page/Landing'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import IronoxLanding from "./page/Landing"
 import './globals.css'
-
 function App() {
   return (
-    <IronoxLanding/>
+    <Router>
+      <Routes>
+        {/* Render same component on both "/" and "/shop" */}
+        <Route path="/" element={<IronoxLanding />} />
+        <Route path="/shop" element={<IronoxLanding />} />
+      </Routes>
+    </Router>
   )
 }
 
